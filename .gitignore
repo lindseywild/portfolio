@@ -1,1 +1,5 @@
 node_modules
+__assets__
+public/static/*
+.DS_Store
+.cache/*
