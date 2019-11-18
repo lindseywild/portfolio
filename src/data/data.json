@@ -1,0 +1,22 @@
+{
+  "positions": [
+    {
+      "title": "Front End Engineer",
+      "company": "Tuft & Needle",
+      "dates": "October 2019 - present",
+      "experience": [
+        "Build React components for product pages on eCommerce website",
+        "Collaborate with team members"
+      ]
+    },
+    {
+      "title": "Front End Engineer 2",
+      "company": "Tuft & Needle 2",
+      "dates": "October 2019 - present",
+      "experience": [
+        "Build React components for product pages on eCommerce website",
+        "Collaborate with team members"
+      ]
+    }
+  ]
+}
