@@ -12,10 +12,12 @@ import PropTypes from "prop-types"
 
 class Experience extends React.Component {
   render() {
+    const { company, title } = this.props.position;
+
     return (
       <p>
-        {this.props.position.company}
-        {this.props.position.title}
+        {company}
+        {title}
       </p>
     )
   }
@@ -26,8 +28,8 @@ class Experience extends React.Component {
   //   <p>{position.name}</p>
   // </div>
 
-// Experience.propTypes = {
-//   positions: PropTypes.object,
-// }
+Experience.propTypes = {
+  position: PropTypes.object,
+}
 
 export default Experience
