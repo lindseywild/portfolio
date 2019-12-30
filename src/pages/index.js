@@ -54,13 +54,6 @@ const IndexPage = () => (
       </li>
       <li><strong>Article</strong>: <a href="https://seesparkbox.com/foundry/how_and_why_we_unit_test_our_sass">Unit Testing in Sass</a></li>
     </OtherList>
-
-    <h2><span>Contact</span></h2>
-    <ul>
-      <li><a href="https://twitter.com/stananick">Twitter</a></li>
-      <li><a href="https://github.com/lindseywild">LinkedIn</a></li>
-      <li><a href="https://www.linkedin.com/in/lindseywild/">GitHub</a></li>
-    </ul>
   </Layout>
 )
 
