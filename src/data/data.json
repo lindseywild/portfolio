@@ -1,0 +1,90 @@
+{
+  "positions": [
+    {
+      "title": "Front End Engineer",
+      "company": "Tuft & Needle",
+      "dates": "October 2019 - present",
+      "experience": [
+        "Build new features in React for tuftandneedle.com",
+        "Write unit tests for new and existing components",
+        "Utilize GraphQL API to automate product launches"
+      ]
+    },
+    {
+      "title": "Front End Developer",
+      "company": "Sparkbox",
+      "dates": "January 2018 - September 2019",
+      "experience": [
+        "Build React components for multi-million dollar e-commerce website",
+        "Collaborate with a team of UX designers and developers building, enhancing, and maintaining an enterprise-level design system",
+        "Develop new features using React, Sass, and JavaScript",
+        "Extensive browser testing of new features",
+        "Ensure a minimum of AA accessibility compliance is met for websites and applications",
+        "Write unit tests for Sass & JavaScript to ensure code functions properly",
+        "Participate in mentoring and conducting lessons for Apprentices",
+        "Conduct learning sessions and create materials for leveling up the rest of the Sparkbox team in HTML & CSS",
+        "Present in all-team meetings and client demos",
+        "Developed application using PHP Laravel framework that allows users to fill out an online application"
+      ]
+    },
+    {
+      "title": "Senior eCommerce Front End Web Developer",
+      "company": "DICK'S Sporting Goods",
+      "dates": "June 2016 - December 2017",
+      "experience": [
+        "Manage team of associate web developers on the day-to-day projects for the DICK'S Sporting Goods site",
+        "Conduct and manage code review sessions among the team to improve code quality",
+        "Work closely with the UI design team to produce engaging web experiences",
+        "Lead lunch & learns to teach the rest of our development team skills such as AngularJS",
+        "Conceptualize, plan and build web apps using HTML, Sass, JavaScript/jQuery, AngularJS and RESTful APIs to streamline processes",
+        "Worked on setting up Continuous Integration scripts for deployments",
+        "Work within the Management Center CMS tool and increase efficiency using this tool",
+        "Discuss technical capabilities the front-end dev team is able to produce to our stakeholders",
+        "Develop landing pages for multi-million dollar seasonal campaigns",
+        "Assisted in the development & UAT of a new platform for the DICK'S Sporting Goods site"
+      ]
+    },
+    {
+      "title": "eCommerce Front End Web Developer",
+      "company": "DICK'S Sporting Goods",
+      "dates": "May 2015 - June 2016",
+      "experience": [
+        "Conceptualize, plan and build web apps using HTML, CSS, JavaScript/jQuery and APIs to streamline processes",
+        "Build marketing sites for in-house brands to be pixel-perfect based off of designs",
+        "Maintain content for dickssportinggoods.com",
+        "Suggest and develop enhancements to current processes for the various DSG owned websites",
+        "Ensure browser compatibility for DSG websites all the way back to IE7"
+      ]
+    },
+    {
+      "title": "Front End Web Designer/Developer, Digital Commerce",
+      "company": "Giant Eagle",
+      "dates": "April 2013 - May 2015",
+      "experience": [
+        "Rebuilt entire website's front end using the inuit grid, Sass, HTML5 and CSS3",
+        "Plan, wireframe, design & develop new front end initiatives, including one-off promotional landing pages and online ordering programs",
+        "Helped plan, wireframe, design & build a mobile-friendly eCommerce site",
+        "Built responsive microsites using Bootstrap 3 and LESS",
+        "Work with back-end offshore developers on bugs and troubleshooting",
+        "Perform web updates & manage products among the different Content Management Systems (such as SiteCore & Episerver) for the various brands and departments",
+        "Design and develop responsive email campaigns from the ground up",
+        "Design and develop Facebook contests, sweepstakes and other applications",
+        "Led in-depth CMS training sessions to newer and less experienced users",
+        "Brainstorm ways to make current processes more efficient and investigate ways to keep websites current with competitors"
+      ]
+    },
+    {
+      "title": "Front End Web Developer",
+      "company": "LEVY MG",
+      "dates": "January 2012 - April 2013",
+      "experience": [
+        "Design/develop websites for a variety of clients and industries",
+        "Maintain existing websites and client relationships",
+        "Take educated risks by using new technologies",
+        "Design/develop email blasts",
+        "Interface with clients to efficiently market their industrial business online",
+        "Photo manipulation"
+      ]
+    }
+  ]
+}
