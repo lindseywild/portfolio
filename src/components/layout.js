@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-
+import styled from "styled-components"
 import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -25,17 +25,22 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div>
+      <Container>
         <main>{children}</main>
         <footer>
           {/* © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
-      </div>
+      </Container>
     </>
   )
 }
+
+const Container = styled.div`
+  margin: 2rem auto;
+  padding: 0 1rem;
+`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

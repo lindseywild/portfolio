@@ -4,3 +4,27 @@ body {
   font-family: $body-font-stack;
   font-size: 16px;
 }
+
+h1 {
+  font-family: $heading-font-stack;
+
+  span {
+    font-family: $body-font-stack;
+    border-top: 1px solid $secondary-color;
+  }
+}
+
+h2 {
+  font-family: $heading-font-stack;
+  font-size: 1.75rem;
+  letter-spacing: 0.1rem;
+  background-color: $secondary-color;
+  margin: 4rem 0 2rem;
+
+  span {
+    padding-right: 0.5rem;
+    background-color: #1D201F;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+  }
+}

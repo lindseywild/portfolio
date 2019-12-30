@@ -89,6 +89,7 @@ sup {
 }
 img {
   border-style: none;
+  max-width: 100%;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -510,9 +511,6 @@ dt {
 }
 th {
   font-weight: bold;
-}
-li {
-  margin-bottom: calc(1.45rem / 2);
 }
 ol li {
   padding-left: 0;
