@@ -1,7 +1,6 @@
-// import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
+import texture from "../images/texture.png"
 
 const Header = () => (
   <HeaderContainer>
@@ -12,6 +11,7 @@ const Header = () => (
 const HeaderContainer = styled.header`
   text-align: center;
   padding: 2rem;
+  background-image: url(${texture});
 `
 
 const Headline = styled.h1`
@@ -27,13 +27,4 @@ const Headline = styled.h1`
     padding-top: 0.5rem;
   }
 `
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Header

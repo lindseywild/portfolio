@@ -1,7 +1,7 @@
 # TODOS
 
-- Implement SCSS
-- Add colors to color scheme
+- Cleanup index file, make new components if necessary
+- Figure out using a ThemeProvider in Styled Components
 
 ## Misc. Thoughts
 

@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Header from "./header"
 import Social from "./social"
+import texture from "../images/texture.png"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -45,6 +46,7 @@ const Footer = styled.footer`
   padding: 2rem 0;
   display: flex;
   justify-content: center;
+  background-image: url(${texture});
 `
 
 Layout.propTypes = {

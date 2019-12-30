@@ -3,10 +3,10 @@ import styled from "styled-components"
 
 const Social = () => (
   <SocialIcons>
-    <li><a href="https://twitter.com/stananick"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/lindseywild/"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="https://github.com/lindseywild"><i class="fa fa-github"></i></a></li>
-    <li><a href="https://codepen.io/stananick"><i class="fa fa-codepen"></i></a></li>
+    <li><a href="https://twitter.com/stananick"><i class="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/lindseywild/"><i class="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
+    <li><a href="https://github.com/lindseywild"><i class="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
+    <li><a href="https://codepen.io/stananick"><i class="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
   </SocialIcons>
 )
 
@@ -24,7 +24,7 @@ const SocialIcons = styled.ul`
 
   i {
     font-size: 1.5rem;
-    color: #1D201F;
+    color: $dark;
   }
 `
 

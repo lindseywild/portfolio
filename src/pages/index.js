@@ -15,7 +15,7 @@ const IndexPage = () => (
     <About>
       <Headshot src={headshot} alt="Lindsey Wild Headshot" />
       <div>
-        <p>Hi! I'm Lindsey Wild, a Front End Engineer in Pittsburgh. PA. I have over {new Date().getFullYear() - 2012} years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting.</p>
+        <p>Hi! I'm Lindsey Wild, a Front End Engineer in Pittsburgh, PA. I have over {new Date().getFullYear() - 2012} years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting. I am also a certified Web Accessibilty Specialist (WAS).</p>
 
         <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding or learing more about code, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Indians, trying new recipes, and traveling.</p>
       </div>
