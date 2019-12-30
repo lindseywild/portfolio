@@ -17,7 +17,6 @@ h1 {
 h2 {
   font-family: $heading-font-stack;
   font-size: 1.75rem;
-  letter-spacing: 0.1rem;
   background-color: $secondary-color;
   margin: 4rem 0 2rem;
 
@@ -26,5 +25,41 @@ h2 {
     background-color: #1D201F;
     margin-left: 1.5rem;
     padding-left: 0.5rem;
+  }
+}
+
+h3 {
+  font-family: $body-font-stack;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  span {
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+
+    @media (min-width: 768px) {
+      display: inline;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+a {
+  border-bottom: 3px solid $tertiary-color;
+  background-color: lighten($dark, 10%);
+  transition: 100ms border-width ease-in-out;
+
+  &:hover {
+    border-width: 5px;
+    text-decoration: none;
   }
 }

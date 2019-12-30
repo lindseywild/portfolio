@@ -1,27 +1,12 @@
 import React from "react"
-// import { Link } from "gatsby"
 import data from "../data/data.json";
 import Experience from "../components/experience"
 import Skills from "../components/skills"
 import Tools from "../components/tools"
 import Layout from "../components/layout"
-// import Image from "../components/image"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import headshot from "../images/lindseywild-headshot.jpg"
-
-const About = styled.div`
-  @media (min-width: 768px) {
-    display: flex;
-  }
-`
-
-const Headshot = styled.img`
-  border-radius: 5rem;
-  max-width: 50%;
-  margin: 1rem auto;
-  display: block;
-`
 
 const IndexPage = () => (
   <Layout>
@@ -30,17 +15,17 @@ const IndexPage = () => (
     <About>
       <Headshot src={headshot} alt="Lindsey Wild Headshot" />
       <div>
-        <p>Hey! I'm Lindsey and I'm originally from Akron, Ohio. I moved to Pittsburgh in 2010 to pursue a degree in web development. I dabbled in web design/development in high school and have had a passion for it ever since!</p>
+        <p>Hi! I'm Lindsey Wild, a Front End Engineer in Pittsburgh. PA. I have over {new Date().getFullYear() - 2012} years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting.</p>
 
         <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding or learing more about code, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Indians, trying new recipes, and traveling.</p>
       </div>
     </About>
 
-    <h2><span>Skills</span></h2>
-    <Skills />
-
-    <h2><span>Tools</span></h2>
-    <Tools />
+    <h2><span>Skills & Tools</span></h2>
+    <HalfWrapper>
+      <Skills />
+      <Tools />
+    </HalfWrapper>
 
     <h2><span>Work Experience</span></h2>
     {data.positions.map((position, i) => {
@@ -49,17 +34,26 @@ const IndexPage = () => (
 
     <h2><span>Other Experience</span></h2>
     <h3>Certifications</h3>
-    <h4>Web Accessibility Specialist (WAS)</h4>
-    <p>IAAP - International Association of Accessibility Professionals</p>
-
-    <h3>Speaking / Articles</h3>
     <ul>
-      <li>Unit Testing in Sass &mdash; <a href="https://www.codemash.org/">CodeMash</a> 2019</li>
-      <li>Unit Testing in Sass &mdash; <a href="https://www.thatconference.com/wi">THAT Conference</a> 2019</li>
-      <li>Unit Testing in Sass &mdash; <a href="https://abstractions.io/">Abstractions</a> 2019</li>
-      <li>Tips for Remote Working &mdash; <a href="https://www.meetup.com/Gem-City-JS/">Gem City JS</a> 2019</li>
+      <li><a href="https://www.accessibilityassociation.org/wascertification">Web Accessibility Specialist (WAS)</a></li>
     </ul>
 
+    <h3>Speaking / Articles</h3>
+    <OtherList>
+      <li><strong>Conference Talk</strong>: Unit Testing in Sass @
+        <ul>
+          <li><a href="https://www.codemash.org/">CodeMash</a> &ndash; 2019</li>
+          <li><a href="https://www.thatconference.com/wi">THAT Conference</a> &ndash; 2019</li>
+          <li><a href="https://abstractions.io/">Abstractions</a> &ndash; 2019</li>
+        </ul>
+      </li>
+      <li><strong>Lightning Talk</strong>: Tips for Remote Working @
+        <ul>
+          <li><a href="https://www.meetup.com/Gem-City-JS/">Gem City JS</a> 2019</li>
+        </ul>
+      </li>
+      <li><strong>Article</strong>: <a href="https://seesparkbox.com/foundry/how_and_why_we_unit_test_our_sass">Unit Testing in Sass</a></li>
+    </OtherList>
 
     <h2><span>Contact</span></h2>
     <ul>
@@ -67,14 +61,52 @@ const IndexPage = () => (
       <li><a href="https://github.com/lindseywild">LinkedIn</a></li>
       <li><a href="https://www.linkedin.com/in/lindseywild/">GitHub</a></li>
     </ul>
-
-
-
-    {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div> */}
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
+
+const About = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+`
+
+const Headshot = styled.img`
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+
+  @media (min-width: 768px) {
+    max-width: 30%;
+    order: 1;
+  }
+`
+
+const HalfWrapper = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+  }
+`
+
+const OtherList = styled.ul`
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    padding-bottom: 1rem;
+  }
+
+  li > ul > li {
+    list-style: disc;
+  }
+`
+
 
 export default IndexPage

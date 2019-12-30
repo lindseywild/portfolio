@@ -16,14 +16,13 @@ const HeaderContainer = styled.header`
 
 const Headline = styled.h1`
   font-size: 2rem;
-  margin-bottom: 0;
-  letter-spacing: 0.15rem;
+  margin: 0 auto;
+  max-width: 500px;
 
   span {
     font-size: 1.5rem;
     display: block;
     font-weight: 300;
-    letter-spacing: 0;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
   }

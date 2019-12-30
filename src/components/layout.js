@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
 const Container = styled.div`
   margin: 2rem auto;
   padding: 0 1rem;
+  max-width: 1024px;
 `
 
 Layout.propTypes = {
