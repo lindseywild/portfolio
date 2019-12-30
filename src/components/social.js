@@ -24,7 +24,7 @@ const SocialIcons = styled.ul`
 
   i {
     font-size: 1.5rem;
-    color: $dark;
+    color: #1D201F;
   }
 `
 
