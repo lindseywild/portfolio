@@ -12,13 +12,22 @@ import PropTypes from "prop-types"
 
 class Experience extends React.Component {
   render() {
-    const { company, title } = this.props.position;
+    const { company, title, dates, experience } = this.props.position;
+
+    const experienceItem = experience.map((item, key) => {
+      return <li key={key}>{item}</li>
+    });
 
     return (
-      <p>
-        {company}
-        {title}
-      </p>
+      <section>
+        <h3>
+          <strong>{title}</strong> &mdash; {company}
+        </h3>
+        <p>{dates}</p>
+        <ul>
+          {experienceItem}
+        </ul>
+      </section>
     )
   }
 }
