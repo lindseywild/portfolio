@@ -29,7 +29,7 @@ const IndexPage = () => (
 
     <h2><span>Work Experience</span></h2>
     {data.positions.map((position, i) => {
-      return <Experience position={position}/>
+      return <Experience position={position} key={i} />
     })}
 
     <h2><span>Other Experience</span></h2>
