@@ -19,9 +19,12 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {},
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
