@@ -2,12 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import texture from "../images/texture.png"
 
-const Header = () => (
-  <HeaderContainer>
-    <Headline>Lindsey Wild <span>Front End Engineer</span></Headline>
-  </HeaderContainer>
-)
-
 const HeaderContainer = styled.header`
   text-align: center;
   padding: 2rem;
@@ -27,4 +21,11 @@ const Headline = styled.h1`
     padding-top: 0.5rem;
   }
 `
+
+const Header = () => (
+  <HeaderContainer>
+    <Headline>Lindsey Wild <span>Front End Engineer</span></Headline>
+  </HeaderContainer>
+)
+
 export default Header

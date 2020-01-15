@@ -1,15 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-const Social = () => (
-  <SocialIcons>
-    <li><a href="https://twitter.com/stananick"><i className="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/lindseywild/"><i className="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
-    <li><a href="https://github.com/lindseywild"><i className="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
-    <li><a href="https://codepen.io/stananick"><i className="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
-  </SocialIcons>
-)
-
 const SocialIcons = styled.ul`
   list-style: none;
   display: flex;
@@ -27,5 +18,15 @@ const SocialIcons = styled.ul`
     color: #1D201F;
   }
 `
+
+const Social = () => (
+  <SocialIcons>
+    <li><a href="https://twitter.com/stananick"><i className="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/lindseywild/"><i className="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
+    <li><a href="https://github.com/lindseywild"><i className="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
+    <li><a href="https://codepen.io/stananick"><i className="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
+  </SocialIcons>
+)
+
 
 export default Social

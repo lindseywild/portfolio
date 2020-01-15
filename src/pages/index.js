@@ -8,6 +8,51 @@ import SEO from "../components/seo"
 import styled from "styled-components"
 import headshot from "../images/lindseywild-headshot.jpg"
 
+const About = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+`
+
+const Headshot = styled.img`
+  border-radius: 50%;
+  max-width: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+
+  @media (min-width: 768px) {
+    max-width: 30%;
+    order: 1;
+  }
+`
+
+const HalfWrapper = styled.div`
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+  }
+`
+
+const OtherList = styled.ul`
+  list-style: none;
+  margin-left: 0;
+
+  > li {
+    padding-bottom: 1rem;
+  }
+
+  li > ul > li {
+    list-style: disc;
+  }
+`
+
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -56,50 +101,5 @@ const IndexPage = () => (
     </OtherList>
   </Layout>
 )
-
-const About = styled.div`
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-
-    p {
-      margin-bottom: 1rem;
-    }
-  }
-`
-
-const Headshot = styled.img`
-  border-radius: 50%;
-  max-width: 50%;
-  margin: 0 auto 1rem auto;
-  display: flex;
-
-  @media (min-width: 768px) {
-    max-width: 30%;
-    order: 1;
-  }
-`
-
-const HalfWrapper = styled.div`
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    max-width: 650px;
-  }
-`
-
-const OtherList = styled.ul`
-  list-style: none;
-  margin-left: 0;
-
-  > li {
-    padding-bottom: 1rem;
-  }
-
-  li > ul > li {
-    list-style: disc;
-  }
-`
-
 
 export default IndexPage

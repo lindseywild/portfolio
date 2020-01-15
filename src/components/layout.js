@@ -13,6 +13,20 @@ import Header from "./header"
 import Social from "./social"
 import texture from "../images/texture.png"
 
+const Container = styled.div`
+  margin: 2rem auto;
+  padding: 0 1rem;
+  max-width: 1024px;
+`
+
+const Footer = styled.footer`
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(${texture});
+`
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -34,20 +48,6 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-const Container = styled.div`
-  margin: 2rem auto;
-  padding: 0 1rem;
-  max-width: 1024px;
-`
-
-const Footer = styled.footer`
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  justify-content: center;
-  background-image: url(${texture});
-`
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
