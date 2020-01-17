@@ -25,6 +25,7 @@ const Footer = styled.footer`
   display: flex;
   justify-content: center;
   background-image: url(${texture});
+  background-color: ${props => props.theme.primaryColor};
 `
 
 const Layout = ({ children }) => {
