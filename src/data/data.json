@@ -6,8 +6,13 @@
       "website": "https://www.linkedin.com/company/tuft-&-needle/",
       "dates": "October 2019 - present",
       "experience": [
-        "Build new features in React for tuftandneedle.com",
-        "Write unit tests for new and existing components",
+        "Lead accessibility remediation efforts get websites to meet WCAG 2.1 AA compliance",
+        "Lead several training sessions on accessibility for engineers, designers, and marketing",
+        "Part of team leading documentation improvement efforts, contributed to about 40% of all existing documentation",
+        "Worked on team to rapidly launch new products on the website, given a scope of 8 weeks and completed in 5 weeks - new products increased sales significantly",
+        "Write and teach the team how to write integration tests (Cypress) for all 3 websites under our domain",
+        "Write unit tests (Jest/React Testing Library) for new and existing components",
+        "Build new features/maintain existing features in React for tuftandneedle.com, beautyrest.com, and serta.com",
         "Utilize GraphQL API to automate product launches"
       ]
     },
@@ -21,8 +26,8 @@
         "Collaborate with a team of UX designers and developers building, enhancing, and maintaining an enterprise-level design system",
         "Develop new features using React, Sass, and JavaScript",
         "Extensive browser testing of new features",
-        "Ensure a minimum of AA accessibility compliance is met for websites and applications",
-        "Write unit tests for Sass & JavaScript to ensure code functions properly",
+        "Ensure a minimum of WCAG 2.1 AA accessibility compliance is met for websites and applications",
+        "Write unit tests (Enzyme, Jest) for Sass & JavaScript to ensure code functions properly",
         "Participate in mentoring and conducting lessons for Apprentices",
         "Conduct learning sessions and create materials for leveling up the rest of the Sparkbox team in HTML & CSS",
         "Present in all-team meetings and client demos",
