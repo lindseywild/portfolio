@@ -13,6 +13,9 @@ import Header from "./header"
 import Social from "./social"
 import texture from "../images/texture.png"
 
+// global styles - FOR AMERICA 🇺🇸
+import "../scss/main.scss";
+
 const Container = styled.div`
   margin: 2rem auto;
   padding: 0 1rem;
