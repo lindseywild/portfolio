@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Lindsey Wild | Front End Engineer`,
-    description: `Lindsey Wild is a Front End Engineer with over 6 years of experience as a designer and developer.`,
+    description: `Lindsey Wild is a Senior Front End Engineer with over 6 years of experience as a designer and developer.`,
     author: `@stananick`,
   },
   plugins: [
@@ -15,6 +15,7 @@ module.exports = {
         trackingId: "UA-35182438-1",
       },
     },
+    `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,18 +40,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Fira Sans`,
-            variants: [`300`, `400`, `700`]
-          },
-          {
-            family: `Playfair Display`,
-            variants: [`300`, `400`, `700`]
-          },
-        ],
+        fonts: [`Fira Sans\:300,400,700\/`,`Playfair Display\:300,400,700\/`],
       },
     }
   ],

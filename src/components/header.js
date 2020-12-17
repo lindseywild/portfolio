@@ -29,7 +29,7 @@ const Headline = styled.h1`
 
 const Header = () => (
   <HeaderContainer>
-    <Headline>Lindsey Wild <span>Front End Engineer</span></Headline>
+    <Headline>Lindsey Wild <span>Senior Front End Engineer</span></Headline>
   </HeaderContainer>
 )
 
