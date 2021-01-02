@@ -2,17 +2,9 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 
-// const Experience = ({ positions }) => (
-//   Object.keys(positions).map((position, i) => (
-//     <div key={i}>
-//     <p>{position.title}</p>
-//     <p>{position.name}</p>
-//   </div>
-//   ))
-// )
-
 const ExperienceItem = styled.section`
   margin-top: 3rem;
+  max-width: 750px;
 
   h3 {
     display: inline;
@@ -32,7 +24,7 @@ const ListItem = styled.li`
   margin-bottom: 0.5rem;
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 0.25rem;
   }
 `
 
@@ -58,11 +50,6 @@ class Experience extends React.Component {
     )
   }
 }
-  // Object.keys(positions).map((position, i) => (
-  //   <div key={i}>
-  //   <p>{position.title}</p>
-  //   <p>{position.name}</p>
-  // </div>
 
 Experience.propTypes = {
   position: PropTypes.object,
