@@ -6,6 +6,7 @@
       "website": "https://www.linkedin.com/company/tuft-&-needle/",
       "dates": "October 2019 - present",
       "experience": [
+        "Part of core team planning, building, and architecting a design system using: React, TypeScript, Storybook, and Chromatic",
         "Lead accessibility remediation efforts to get websites to meet WCAG 2.1 AA compliance",
         "Lead several training sessions on accessibility for engineers, designers, and marketing",
         "Migrate and convert pug/express codebase to React/NextJS",

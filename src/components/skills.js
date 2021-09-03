@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const Skills = () => (
   <div>
@@ -9,12 +9,12 @@ const Skills = () => (
       <li>HTML</li>
       <li>Sass/CSS/CSS-in-JS</li>
       <li>Accessibility</li>
+      <li>Design Systems/Component Libraries</li>
       <li>Testing (React Testing Library, Jest, Enzyme, Cypress)</li>
-      <li>Design Systems</li>
       <li>Conference Speaking/Internal Trainings</li>
       <li>Dev Team Management</li>
     </ul>
   </div>
-)
+);
 
-export default Skills
+export default Skills;
