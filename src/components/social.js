@@ -21,10 +21,10 @@ const SocialIcons = styled.ul`
 
 const Social = () => (
   <SocialIcons>
-    <li><a href="https://twitter.com/stananick"><i className="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
+    <li><a href="https://twitter.com/lindseywild_"><i className="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
     <li><a href="https://www.linkedin.com/in/lindseywild/"><i className="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
     <li><a href="https://github.com/lindseywild"><i className="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
-    <li><a href="https://codepen.io/stananick"><i className="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
+    <li><a href="https://codepen.io/lindseywild"><i className="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
   </SocialIcons>
 )
 
