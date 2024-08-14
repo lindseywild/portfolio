@@ -1,10 +1,24 @@
 {
   "positions": [
     {
+      "title": "Senior Software Engineer",
+      "company": "GitHub",
+      "website": "https://www.linkedin.com/company/github/",
+      "dates": "January 2022 - present",
+      "experience": [
+        "Helped with the creation of an Accessibility Champions program to help level-up the rest of the GitHub org with accessibility knowledge, including structuring and creating content",
+        "Built a reusable, accessible component for query inputs throughout GitHub, including the main search in the global header and Discussions search (see related blog post for the QueryBuilder component: https://github.blog/2022-12-13-creating-an-accessible-search-experience-with-the-querybuilder-component/)",
+        "Built a reusable menu component that is used throughout GitHub such as the 'edit history' menu and 'additional actions' menu on comments",
+        "Created and presented several company-wide presentations on accessibility such as reviewing PRs for accessibility",
+        "Contributed several accessibility bug fixes to GitHub.com",
+        "Triage accessibility audit issues, hand off to feature teams to fix, and validate issues are fixed"
+      ]
+    },
+    {
       "title": "Senior Front End Engineer",
       "company": "Tuft & Needle",
       "website": "https://www.linkedin.com/company/tuft-&-needle/",
-      "dates": "October 2019 - present",
+      "dates": "October 2019 - January 2022",
       "experience": [
         "Part of core team planning, building, and architecting a design system using: React, TypeScript, Storybook, and Chromatic",
         "Lead accessibility remediation efforts to get websites to meet WCAG 2.1 AA compliance",
