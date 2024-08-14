@@ -84,9 +84,9 @@ const IndexPage = () => (
       <About>
         <Headshot src={headshot} alt="Lindsey Wild Headshot" />
         <div>
-          <p>Hi! I'm Lindsey Wild, a Senior Front End Engineer in Pittsburgh, PA. I have over {new Date().getFullYear() - 2012} years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting. I am also a certified Web Accessibilty Specialist (WAS).</p>
+          <p>Hi! I'm Lindsey Wild, a Senior Front End Engineer in Pittsburgh, PA. I have over {new Date().getFullYear() - 2012} years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting. I am also a Certified Professional in Web Accessibility (CPWA).</p>
 
-          <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding or learing more about code, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Indians, trying new recipes, and traveling.</p>
+          <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Guardians, trying new recipes, and traveling.</p>
         </div>
       </About>
 
@@ -109,14 +109,19 @@ const IndexPage = () => (
 
       <h3>Speaking / Articles</h3>
       <OtherList>
-        <li><strong>Conference Talk</strong>: Unit Testing in Sass @
+        <li><strong>Conference Talk</strong>: Establishing a Scalable A11y Education Ecosystem
+          <ul>
+            <li><a href="https://www.deque.com/axe-con/sessions/establishing-a-scalable-a11y-education-ecosystem/">axe-con</a> &ndash; 2024</li>
+          </ul>
+        </li>
+        <li><strong>Conference Talk</strong>: Unit Testing in Sass
           <ul>
             <li><a href="https://www.codemash.org/">CodeMash</a> &ndash; 2019</li>
             <li><a href="https://www.thatconference.com/wi">THAT Conference</a> &ndash; 2019</li>
             <li><a href="https://abstractions.io/">Abstractions</a> &ndash; 2019</li>
           </ul>
         </li>
-        <li><strong>Lightning Talk</strong>: Tips for Remote Working @
+        <li><strong>Lightning Talk</strong>: Tips for Remote Working
           <ul>
             <li><a href="https://www.meetup.com/Gem-City-JS/">Gem City JS</a> 2019</li>
           </ul>
