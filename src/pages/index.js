@@ -104,7 +104,7 @@ const IndexPage = () => (
       <SectionHeader><span>Other Experience</span></SectionHeader>
       <h3>Certifications</h3>
       <ul>
-        <li><a href="https://www.accessibilityassociation.org/wascertification">Web Accessibility Specialist (WAS)</a></li>
+        <li><a href="https://www.accessibilityassociation.org/s/certified-professional-web-accessibility">Certified Professional in Web Accessibility (CPWA)</a></li>
       </ul>
 
       <h3>Speaking / Articles</h3>
