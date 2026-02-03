@@ -62,27 +62,6 @@ portfolio/
 ### Experience Data
 Edit `src/data/data.json` to update work experience.
 
-### Personal Information
-Edit `index.html` directly to update:
-- About section
-- Skills and tools
-- Social media links
-- Other experience
-
-### Styling
-All styles are embedded in the `<style>` tag in `index.html` for easy customization.
-
-## 🌐 Deployment
-
-Since this is a static site, you can deploy it to any static hosting service:
-
-- **GitHub Pages**: Push to a gh-pages branch
-- **Netlify**: Drag and drop the folder or connect to your Git repository
-- **Vercel**: Import the project
-- **Any web server**: Upload files to your server's public directory
-
-No build step required - just upload the files!
-
 ## 📄 License
 
 MIT
