@@ -51,6 +51,13 @@ h3 {
     margin-top: 2rem;
 }
 
+h3 span {
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+}
+
 @media (min-width: 768px) {
     h3 {
         font-size: 1.4rem;
@@ -61,13 +68,6 @@ h3 {
         display: inline;
         font-size: 1.2rem;
     }
-}
-
-h3 span {
-    font-size: 1.1rem;
-    display: block;
-    font-weight: 300;
-    padding-bottom: 0.3rem;
 }
 
 p {
