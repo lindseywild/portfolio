@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsey Wild | Front End Engineer</title>
+    <meta name="description" content="Lindsey Wild is a Senior Front End Engineer specializing in accessibility, React, and web development.">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Playfair+Display:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lindsey Wild <span>Senior Front End Engineer</span></h1>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <h2 class="section-header"><span>About</span></h2>
+        <div class="about">
+            <img src="src/images/lindseywild-headshot.jpg" alt="Lindsey Wild Headshot" class="headshot">
+            <div>
+                <p>Hi! I'm Lindsey Wild, a Senior Front End Engineer in Pittsburgh, PA. I have over <span id="years-experience"></span> years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting. I am also a Certified Professional in Web Accessibility (CPWA).</p>
+                <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Guardians, trying new recipes, and traveling.</p>
+            </div>
+        </div>
+        
+        <!-- Skills & Tools Section -->
+        <h2 class="section-header"><span>Skills & Tools</span></h2>
+        <div class="half-wrapper">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>JavaScript (ES6)</li>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>Sass/CSS/CSS-in-JS</li>
+                    <li>Accessibility</li>
+                    <li>Design Systems/Component Libraries</li>
+                    <li>Testing (React Testing Library, Jest, Enzyme, Cypress)</li>
+                    <li>Conference Speaking/Internal Trainings</li>
+                    <li>Dev Team Management</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git/GitHub</li>
+                    <li>Gulp/Webpack</li>
+                    <li>Babel</li>
+                    <li>Node/npm</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>WordPress/CMS</li>
+                    <li>VSCode</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Work Experience Section -->
+        <h2 class="section-header"><span>Work Experience</span></h2>
+        <div id="experience-container"></div>
+        
+        <!-- Other Experience Section -->
+        <h2 class="section-header"><span>Other Experience</span></h2>
+        <h3>Certifications</h3>
+        <ul>
+            <li><a href="https://www.accessibilityassociation.org/s/certified-professional-web-accessibility">Certified Professional in Web Accessibility (CPWA)</a></li>
+        </ul>
+        
+        <h3>Speaking / Articles</h3>
+        <ul class="other-list">
+            <li><strong>Conference Talk</strong>: Establishing a Scalable A11y Education Ecosystem
+                <ul>
+                    <li><a href="https://www.deque.com/axe-con/sessions/establishing-a-scalable-a11y-education-ecosystem/">axe-con</a> &ndash; 2024</li>
+                </ul>
+            </li>
+            <li><strong>Conference Talk</strong>: Unit Testing in Sass
+                <ul>
+                    <li><a href="https://www.codemash.org/">CodeMash</a> &ndash; 2019</li>
+                    <li><a href="https://www.thatconference.com/wi">THAT Conference</a> &ndash; 2019</li>
+                    <li><a href="https://abstractions.io/">Abstractions</a> &ndash; 2019</li>
+                </ul>
+            </li>
+            <li><strong>Lightning Talk</strong>: Tips for Remote Working
+                <ul>
+                    <li><a href="https://www.meetup.com/Gem-City-JS/">Gem City JS</a> 2019</li>
+                </ul>
+            </li>
+            <li><strong>Article</strong>: <a href="https://seesparkbox.com/foundry/how_and_why_we_unit_test_our_sass">Unit Testing in Sass</a></li>
+        </ul>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/lindseywild_" aria-label="Lindsey Wild on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lindseywild/" aria-label="Lindsey Wild on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/lindseywild" aria-label="Lindsey Wild on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://codepen.io/lindseywild" aria-label="Lindsey Wild on CodePen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+        </ul>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Calculate years of experience
+        const yearsExperience = new Date().getFullYear() - 2012;
+        document.getElementById('years-experience').textContent = yearsExperience;
+        
+        // Load and render experience data
+        fetch('src/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('experience-container');
+                data.positions.forEach(position => {
+                    const section = document.createElement('section');
+                    section.className = 'experience-item';
+                    
+                    const heading = document.createElement('h3');
+                    heading.innerHTML = `<span>${position.title} @ </span><a href="${position.website}">${position.company}</a>`;
+                    
+                    const dates = document.createElement('p');
+                    dates.className = 'experience-dates';
+                    dates.innerHTML = `<em>${position.dates}</em>`;
+                    
+                    const list = document.createElement('ul');
+                    position.experience.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        list.appendChild(li);
+                    });
+                    
+                    section.appendChild(heading);
+                    section.appendChild(dates);
+                    section.appendChild(list);
+                    container.appendChild(section);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading experience data:', error);
+                const container = document.getElementById('experience-container');
+                container.innerHTML = '<p>Unable to load work experience at this time. Please try refreshing the page.</p>';
+            });
+    </script>
+</body>
+</html>

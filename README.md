@@ -1,3 +1,88 @@
-# https://www.lindseywild.com
+# Lindsey Wild's Portfolio
 
-Portfolio website on https://www.lindseywild.com built with Gatsby.
+Portfolio website available at https://www.lindseywild.com
+
+This is a simple, static website built with pure HTML, CSS, and JavaScript. No build process required!
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v14 or higher) - only needed for the local development server
+
+### Running Locally
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Start the development server:
+```bash
+npm start
+```
+
+This will start a local server at `http://localhost:8080` and automatically open it in your browser.
+
+Alternatively, you can use:
+```bash
+npm run serve
+```
+to start the server without automatically opening the browser.
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── index.html           # Main HTML file with all content and styles
+├── src/
+│   ├── images/          # Images (headshot, favicon, texture)
+│   └── data/
+│       └── data.json    # Work experience data
+├── package.json         # npm configuration
+└── README.md
+```
+
+## 🛠️ Technology Stack
+
+- **HTML5** - Structure and content
+- **CSS3** - Styling and layout
+- **Vanilla JavaScript** - Dynamic content loading
+- **http-server** - Simple local development server
+
+## ✨ Features
+
+- Fully responsive design
+- No build process or compilation needed
+- Easy to update and maintain
+- Minimal dependencies (only http-server for local development)
+- Self-contained single HTML file with embedded styles
+
+## 📝 Updating Content
+
+### Experience Data
+Edit `src/data/data.json` to update work experience.
+
+### Personal Information
+Edit `index.html` directly to update:
+- About section
+- Skills and tools
+- Social media links
+- Other experience
+
+### Styling
+All styles are embedded in the `<style>` tag in `index.html` for easy customization.
+
+## 🌐 Deployment
+
+Since this is a static site, you can deploy it to any static hosting service:
+
+- **GitHub Pages**: Push to a gh-pages branch
+- **Netlify**: Drag and drop the folder or connect to your Git repository
+- **Vercel**: Import the project
+- **Any web server**: Upload files to your server's public directory
+
+No build step required - just upload the files!
+
+## 📄 License
+
+MIT

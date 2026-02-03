@@ -1,5 +1,17 @@
+# Dependencies
 node_modules
-__assets__
-public/static/*
+package-lock.json
+
+# Build artifacts
+public
+.cache
+
+# OS files
 .DS_Store
-.cache/*
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode
+.idea

@@ -1,0 +1,265 @@
+/* CSS Reset and Base Styles */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font: 112.5%/1.45em georgia, serif;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #1D201F;
+    color: #fff;
+    font-family: "Fira Sans", "Helvetica", sans-serif;
+    font-size: 16px;
+    word-wrap: break-word;
+    font-kerning: normal;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", "Helvetica", sans-serif;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
+h3 {
+    font-family: "Fira Sans", "Helvetica", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
+}
+
+h3 span {
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 300;
+    padding-bottom: 0.3rem;
+}
+
+@media (min-width: 768px) {
+    h3 {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    
+    h3 span {
+        display: inline;
+        font-size: 1.2rem;
+    }
+}
+
+p {
+    margin: 0 0 1.45rem 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0 0 1.45rem 1.45rem;
+    padding: 0;
+    list-style-position: outside;
+}
+
+li {
+    padding-left: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 3px solid #DF928E;
+    background-color: #2a2d2c;
+    transition: 100ms border-width ease-in-out;
+}
+
+a:hover {
+    border-width: 5px;
+    text-decoration: none;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 2rem;
+    background-image: url('src/images/texture.png');
+    background-color: #C58882;
+    color: #1D201F;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0 auto;
+    max-width: 500px;
+    font-family: "Playfair Display", "Georgia", serif;
+}
+
+header h1 span {
+    font-size: 1.5rem;
+    display: block;
+    font-weight: 300;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    font-family: "Fira Sans", "Helvetica", sans-serif;
+    border-top: 1px solid #EAD2AC;
+}
+
+/* Container */
+.container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+    max-width: 1024px;
+}
+
+/* Section Headers */
+.section-header {
+    font-family: "Playfair Display", "Georgia", serif;
+    font-size: 1.75rem;
+    background-color: #EAD2AC;
+    margin: 4rem 0 2rem;
+}
+
+.section-header span {
+    padding-right: 0.5rem;
+    background-color: #1D201F;
+    margin-left: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+/* About Section */
+.about {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .about {
+        display: flex;
+        align-items: center;
+    }
+    
+    .about p {
+        margin-bottom: 1rem;
+    }
+}
+
+.headshot {
+    border-radius: 50%;
+    max-width: 50%;
+    margin: 0 auto 1rem auto;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .headshot {
+        max-width: 30%;
+        order: 1;
+    }
+}
+
+/* Skills and Tools Section */
+.half-wrapper {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .half-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 650px;
+    }
+}
+
+/* Experience Section */
+.experience-item {
+    margin-top: 3rem;
+    max-width: 750px;
+}
+
+.experience-item h3 {
+    display: inline;
+}
+
+.experience-dates {
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .experience-dates {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .experience-item li {
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* Other Experience Section */
+.other-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.other-list > li {
+    padding-bottom: 1rem;
+}
+
+.other-list li > ul > li {
+    list-style: disc;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-image: url('src/images/texture.png');
+    background-color: #C58882;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.social-icons a {
+    background-color: transparent;
+    border-color: #EAD2AC;
+    margin: 0 0.75rem;
+    padding: 0.5rem;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #1D201F;
+}
