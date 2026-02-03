@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsey Wild | Front End Engineer</title>
+    <meta name="description" content="Lindsey Wild is a Senior Front End Engineer with over 6 years of experience as a designer and developer.">
+    <link rel="icon" type="image/png" href="src/images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;700&family=Playfair+Display:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+    
+    <style>
+        /* CSS Reset and Base Styles */
+        html {
+            font-family: sans-serif;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font: 112.5%/1.45em georgia, serif;
+            box-sizing: border-box;
+            overflow-y: scroll;
+        }
+        
+        * {
+            box-sizing: inherit;
+        }
+        
+        *:before, *:after {
+            box-sizing: inherit;
+        }
+        
+        body {
+            margin: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #1D201F;
+            color: #fff;
+            font-family: "Fira Sans", "Helvetica", sans-serif;
+            font-size: 16px;
+            word-wrap: break-word;
+            font-kerning: normal;
+        }
+        
+        img {
+            max-width: 100%;
+            border-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            margin: 0;
+            padding: 0;
+            font-family: "Fira Sans", "Helvetica", sans-serif;
+            font-weight: bold;
+            text-rendering: optimizeLegibility;
+        }
+        
+        h3 {
+            font-family: "Fira Sans", "Helvetica", sans-serif;
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (min-width: 768px) {
+            h3 {
+                font-size: 1.4rem;
+                font-weight: 300;
+            }
+            
+            h3 span {
+                display: inline;
+                font-size: 1.2rem;
+            }
+        }
+        
+        h3 span {
+            font-size: 1.1rem;
+            display: block;
+            font-weight: 300;
+            padding-bottom: 0.3rem;
+        }
+        
+        p {
+            margin: 0 0 1.45rem 0;
+            padding: 0;
+        }
+        
+        ul {
+            margin: 0 0 1.45rem 1.45rem;
+            padding: 0;
+            list-style-position: outside;
+        }
+        
+        li {
+            padding-left: 0;
+        }
+        
+        a {
+            background-color: transparent;
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 3px solid #DF928E;
+            background-color: #2a2d2c;
+            transition: 100ms border-width ease-in-out;
+        }
+        
+        a:hover {
+            border-width: 5px;
+            text-decoration: none;
+        }
+        
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-image: url('src/images/texture.png');
+            background-color: #C58882;
+            color: #1D201F;
+        }
+        
+        header h1 {
+            font-size: 2rem;
+            margin: 0 auto;
+            max-width: 500px;
+            font-family: "Playfair Display", "Georgia", serif;
+        }
+        
+        header h1 span {
+            font-size: 1.5rem;
+            display: block;
+            font-weight: 300;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            font-family: "Fira Sans", "Helvetica", sans-serif;
+            border-top: 1px solid #EAD2AC;
+        }
+        
+        /* Container */
+        .container {
+            margin: 2rem auto;
+            padding: 0 1rem;
+            max-width: 1024px;
+        }
+        
+        /* Section Headers */
+        .section-header {
+            font-family: "Playfair Display", "Georgia", serif;
+            font-size: 1.75rem;
+            background-color: #EAD2AC;
+            margin: 4rem 0 2rem;
+        }
+        
+        .section-header span {
+            padding-right: 0.5rem;
+            background-color: #1D201F;
+            margin-left: 1.5rem;
+            padding-left: 0.5rem;
+        }
+        
+        /* About Section */
+        .about {
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .about {
+                display: flex;
+                align-items: center;
+            }
+            
+            .about p {
+                margin-bottom: 1rem;
+            }
+        }
+        
+        .headshot {
+            border-radius: 50%;
+            max-width: 50%;
+            margin: 0 auto 1rem auto;
+            display: flex;
+        }
+        
+        @media (min-width: 768px) {
+            .headshot {
+                max-width: 30%;
+                order: 1;
+            }
+        }
+        
+        /* Skills and Tools Section */
+        .half-wrapper {
+            display: block;
+        }
+        
+        @media (min-width: 768px) {
+            .half-wrapper {
+                display: flex;
+                justify-content: space-between;
+                max-width: 650px;
+            }
+        }
+        
+        /* Experience Section */
+        .experience-item {
+            margin-top: 3rem;
+            max-width: 750px;
+        }
+        
+        .experience-item h3 {
+            display: inline;
+        }
+        
+        .experience-dates {
+            margin-top: 0.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .experience-dates {
+                margin-top: 0;
+                margin-bottom: 0.75rem;
+            }
+        }
+        
+        .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .experience-item li {
+                margin-bottom: 0.25rem;
+            }
+        }
+        
+        /* Other Experience Section */
+        .other-list {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .other-list > li {
+            padding-bottom: 1rem;
+        }
+        
+        .other-list li > ul > li {
+            list-style: disc;
+        }
+        
+        /* Footer */
+        footer {
+            width: 100%;
+            padding: 2rem 0;
+            display: flex;
+            justify-content: center;
+            background-image: url('src/images/texture.png');
+            background-color: #C58882;
+        }
+        
+        /* Social Icons */
+        .social-icons {
+            list-style: none;
+            display: flex;
+            margin: 0;
+        }
+        
+        .social-icons a {
+            background-color: transparent;
+            border-color: #EAD2AC;
+            margin: 0 0.75rem;
+            padding: 0.5rem;
+        }
+        
+        .social-icons i {
+            font-size: 1.5rem;
+            color: #1D201F;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Lindsey Wild <span>Senior Front End Engineer</span></h1>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <h2 class="section-header"><span>About</span></h2>
+        <div class="about">
+            <img src="src/images/lindseywild-headshot.jpg" alt="Lindsey Wild Headshot" class="headshot">
+            <div>
+                <p>Hi! I'm Lindsey Wild, a Senior Front End Engineer in Pittsburgh, PA. I have over <span id="years-experience"></span> years of experience in the web industry. I've worked for companies large and small, mainly in online retail/eCommerce and consulting. I am also a Certified Professional in Web Accessibility (CPWA).</p>
+                <p>I love learning about the latest trends in web development, and I'm always ready to get my hands dirty with new technologies. When I'm not coding, I enjoy being outdoors and going to the gym. I also like watching the Cleveland Guardians, trying new recipes, and traveling.</p>
+            </div>
+        </div>
+        
+        <!-- Skills & Tools Section -->
+        <h2 class="section-header"><span>Skills & Tools</span></h2>
+        <div class="half-wrapper">
+            <div>
+                <h3>Skills</h3>
+                <ul>
+                    <li>JavaScript (ES6)</li>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>Sass/CSS/CSS-in-JS</li>
+                    <li>Accessibility</li>
+                    <li>Design Systems/Component Libraries</li>
+                    <li>Testing (React Testing Library, Jest, Enzyme, Cypress)</li>
+                    <li>Conference Speaking/Internal Trainings</li>
+                    <li>Dev Team Management</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git/GitHub</li>
+                    <li>Gulp/Webpack</li>
+                    <li>Babel</li>
+                    <li>Node/npm</li>
+                    <li>Adobe Creative Suite</li>
+                    <li>WordPress/CMS</li>
+                    <li>VSCode</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Work Experience Section -->
+        <h2 class="section-header"><span>Work Experience</span></h2>
+        <div id="experience-container"></div>
+        
+        <!-- Other Experience Section -->
+        <h2 class="section-header"><span>Other Experience</span></h2>
+        <h3>Certifications</h3>
+        <ul>
+            <li><a href="https://www.accessibilityassociation.org/s/certified-professional-web-accessibility">Certified Professional in Web Accessibility (CPWA)</a></li>
+        </ul>
+        
+        <h3>Speaking / Articles</h3>
+        <ul class="other-list">
+            <li><strong>Conference Talk</strong>: Establishing a Scalable A11y Education Ecosystem
+                <ul>
+                    <li><a href="https://www.deque.com/axe-con/sessions/establishing-a-scalable-a11y-education-ecosystem/">axe-con</a> &ndash; 2024</li>
+                </ul>
+            </li>
+            <li><strong>Conference Talk</strong>: Unit Testing in Sass
+                <ul>
+                    <li><a href="https://www.codemash.org/">CodeMash</a> &ndash; 2019</li>
+                    <li><a href="https://www.thatconference.com/wi">THAT Conference</a> &ndash; 2019</li>
+                    <li><a href="https://abstractions.io/">Abstractions</a> &ndash; 2019</li>
+                </ul>
+            </li>
+            <li><strong>Lightning Talk</strong>: Tips for Remote Working
+                <ul>
+                    <li><a href="https://www.meetup.com/Gem-City-JS/">Gem City JS</a> 2019</li>
+                </ul>
+            </li>
+            <li><strong>Article</strong>: <a href="https://seesparkbox.com/foundry/how_and_why_we_unit_test_our_sass">Unit Testing in Sass</a></li>
+        </ul>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/lindseywild_"><i class="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lindseywild/"><i class="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
+            <li><a href="https://github.com/lindseywild"><i class="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
+            <li><a href="https://codepen.io/lindseywild"><i class="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
+        </ul>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script>
+        // Calculate years of experience
+        const yearsExperience = new Date().getFullYear() - 2012;
+        document.getElementById('years-experience').textContent = yearsExperience;
+        
+        // Load and render experience data
+        fetch('src/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('experience-container');
+                data.positions.forEach(position => {
+                    const section = document.createElement('section');
+                    section.className = 'experience-item';
+                    
+                    const heading = document.createElement('h3');
+                    heading.innerHTML = `<span>${position.title} @ </span><a href="${position.website}">${position.company}</a>`;
+                    
+                    const dates = document.createElement('p');
+                    dates.className = 'experience-dates';
+                    dates.innerHTML = `<em>${position.dates}</em>`;
+                    
+                    const list = document.createElement('ul');
+                    position.experience.forEach(item => {
+                        const li = document.createElement('li');
+                        li.textContent = item;
+                        list.appendChild(li);
+                    });
+                    
+                    section.appendChild(heading);
+                    section.appendChild(dates);
+                    section.appendChild(list);
+                    container.appendChild(section);
+                });
+            })
+            .catch(error => console.error('Error loading experience data:', error));
+    </script>
+</body>
+</html>
