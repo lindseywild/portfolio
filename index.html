@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lindsey Wild | Front End Engineer</title>
-    <meta name="description" content="Lindsey Wild is a Senior Front End Engineer with over 6 years of experience as a designer and developer.">
+    <meta name="description" content="Lindsey Wild is a Senior Front End Engineer specializing in accessibility, React, and web development.">
     <link rel="icon" type="image/png" href="src/images/favicon.png">
     
     <!-- Google Fonts -->
@@ -369,10 +369,10 @@
     <!-- Footer -->
     <footer>
         <ul class="social-icons">
-            <li><a href="https://twitter.com/lindseywild_"><i class="fa fa-twitter" aria-label="Lindsey Wild on Twitter"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/lindseywild/"><i class="fa fa-linkedin" aria-label="Lindsey Wild on LinkedIn"></i></a></li>
-            <li><a href="https://github.com/lindseywild"><i class="fa fa-github" aria-label="Lindsey Wild on GitHub"></i></a></li>
-            <li><a href="https://codepen.io/lindseywild"><i class="fa fa-codepen" aria-label="Lindsey Wild on CodePen"></i></a></li>
+            <li><a href="https://twitter.com/lindseywild_" aria-label="Lindsey Wild on Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/lindseywild/" aria-label="Lindsey Wild on LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="https://github.com/lindseywild" aria-label="Lindsey Wild on GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+            <li><a href="https://codepen.io/lindseywild" aria-label="Lindsey Wild on CodePen"><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
         </ul>
     </footer>
     
@@ -411,7 +411,11 @@
                     container.appendChild(section);
                 });
             })
-            .catch(error => console.error('Error loading experience data:', error));
+            .catch(error => {
+                console.error('Error loading experience data:', error);
+                const container = document.getElementById('experience-container');
+                container.innerHTML = '<p>Unable to load work experience at this time. Please try refreshing the page.</p>';
+            });
     </script>
 </body>
 </html>
